@@ -4,25 +4,13 @@
   </a>
 </div>
 <div align="center">
-  <h1>📝 Focus Note �</h1>
-  <strong>Rapidly create markdown notes and stay focused with some cool features</strong>
+  <h1>React + Vite + Shadcn + TailwindCSS TEMPLATE PROJECCT</h1>
+  <strong>React 19.1.0 + ReactDOM 19.1.0  + Vite 6.3.5 + TailwindCSS 4.1.8 + ESLint 9.25</strong>
 </div>
 <br>
 
 ## 🚀 Project Features
-This project is a test to create an Electron maccOS app. 
-
-This app will allow you to rapidly create markdown notes and stay focused with some cool features.
-
-- Quickly create notes and stay focused: Creating a note should not be difficult and make you loose your flow.
-
-- Daily Notes: See your notes in a calendar view so you can quickly create notes of each day.
-
-- Tags: Organize notes with tags to quickly access. Let us do the house- keeping to save and manage the files. Don't worry, you can always access the files in your computer disk.
-
-- Rich Text Editor: Powered by Tiptap - a headless, framework-agnostic text editor. Use the toolbar for formatting options like headings, bold, italic, lists, quotes, and code blocks.
-
-- Notes live and die: You can choose to automatically send notes to the trash-bin after a period of days if they are note updated.
+This a template project for a React Vite app. 
 
 Made with ❤️ by Oliver Barreto.
 
