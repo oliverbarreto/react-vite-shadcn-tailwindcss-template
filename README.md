@@ -10,15 +10,38 @@
 <br>
 
 ## 🚀 Project Features
-This a template project for a React Vite app. 
+
+This a template project for a React Vite app.
 
 Made with ❤️ by Oliver Barreto.
 
+# How to use this template
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/oliverbarreto/react-vite-shadcn-tailwind-template.git
+```
+
+2. Remove the git repository to start fresh
+
+```bash
+rm -rf .git
+```
+
+3. Initialize a new git repository `mi-nueva-app`
+
+```bash
+git init
+git remote add origin https://github.com/tu-usuario/mi-nueva-app.git
+git add .
+git commit -m "Initial commit from template"
+git push -u origin main
+```
 
 # Installation (ShadCN + React + TypeScript + Vite))
 
 - https://ui.shadcn.com/docs/installation/vite
-
 
 ## Install and configure shadcn/ui for Vite.
 
@@ -83,9 +106,7 @@ Add the following code to the `tsconfig.app.json` file to resolve paths, for you
     // The following code needs to be added to the file
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
     // ...
   }
@@ -95,6 +116,7 @@ Add the following code to the `tsconfig.app.json` file to resolve paths, for you
 ### Update `vite.config.ts`
 
 Install the `@types/node` package to your project:
+
 ```bash
 npm install -D @types/node
 ```
@@ -110,11 +132,9 @@ import { defineConfig } from "vite"
 // https://vite.dev/config/
 
 export default defineConfig({
-
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-
       "@": path.resolve(__dirname, "./src"),
     },
   },
@@ -150,7 +170,6 @@ The command above will add the `Button` component to your project. You can then 
 ```typescript
 import { Button } from "@/components/ui/button"
 
-
 function App() {
   return (
     <div className="flex min-h-svh flex-col items-center justify-center">
@@ -162,8 +181,8 @@ function App() {
 export default App
 ```
 
-
 # Official README created by ShadCN for Vite Installation
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
@@ -188,7 +207,7 @@ export default tseslint.config({
   languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
       tsconfigRootDir: import.meta.dirname,
     },
   },
@@ -199,19 +218,19 @@ You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-re
 
 ```js
 // eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+import reactX from "eslint-plugin-react-x"
+import reactDom from "eslint-plugin-react-dom"
 
 export default tseslint.config({
   plugins: {
     // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
+    "react-x": reactX,
+    "react-dom": reactDom,
   },
   rules: {
     // other rules...
     // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
+    ...reactX.configs["recommended-typescript"].rules,
     ...reactDom.configs.recommended.rules,
   },
 })
